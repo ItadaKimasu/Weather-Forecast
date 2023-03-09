@@ -1,0 +1,24 @@
+// @import '../helpers/variables';
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $--background;
+    // display: grid;
+    place-items: center;
+    z-index: 1;
+    display: none;
+    &::before {
+        content: "";
+        width: 48px;
+        height: 48px;
+        border: 4px solid $--on-background;
+        border-block-start-color: transparent;
+        border-radius: $--radius-circle;
+        animation: loading 500ms linear infinite;
+    }
+}
+

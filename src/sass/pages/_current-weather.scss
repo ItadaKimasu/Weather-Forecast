@@ -1,0 +1,42 @@
+
+// @import '../helpers/variables';
+
+.current-weather {
+
+    .current-weather-card {
+        .weapper {
+            margin-block: 12px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+    
+            .weather-icon {
+                margin-inline: auto;
+            }
+        }
+    
+        .body-3 {
+            text-transform: capitalize;
+        }
+    
+        .meta-list {
+            margin-block-start: 16px;
+            padding-block-start: 16px;
+            border-block-start: 1px solid $--outline;
+    
+            .meta-item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                &:not(:last-child) {
+                    margin-block-end: 12px;
+                }
+                
+                .meta-text {
+                    color: $--on-surface-variant;
+                }
+            }
+    
+        }
+    }
+}
